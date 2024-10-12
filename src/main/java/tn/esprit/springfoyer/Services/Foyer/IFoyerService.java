@@ -1,4 +1,4 @@
-package tn.esprit.springfoyer.Services;
+package tn.esprit.springfoyer.Services.Foyer;
 
 import tn.esprit.springfoyer.Entities.FoyerModel;
 

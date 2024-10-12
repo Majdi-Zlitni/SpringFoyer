@@ -1,9 +1,12 @@
-package tn.esprit.springfoyer.Services;
+package tn.esprit.springfoyer.Services.Foyer;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.springfoyer.Entities.FoyerModel;
 import tn.esprit.springfoyer.Repositorie.IFoyerModelRepository;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 public class FoyerService implements IFoyerService {
     IFoyerModelRepository FoyerModelRepository;
 
