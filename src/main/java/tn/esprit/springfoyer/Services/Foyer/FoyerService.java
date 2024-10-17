@@ -1,10 +1,12 @@
 package tn.esprit.springfoyer.Services.Foyer;
+
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tn.esprit.springfoyer.Entities.FoyerModel;
 import tn.esprit.springfoyer.Repositorie.IFoyerModelRepository;
 
 import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class FoyerService implements IFoyerService {
@@ -37,10 +39,10 @@ public class FoyerService implements IFoyerService {
         return FoyerModelRepository.findById(id).orElse(FoyerModel
                 .builder()
                 .idFoyer(0)
-                        .nomFoyer("test")
-                        .capaciteFoyer("NAN")
-                        .build()
-                );
+                .nomFoyer("test")
+                .capaciteFoyer("NAN")
+                .build()
+        );
     }
 
     @Override
@@ -50,7 +52,7 @@ public class FoyerService implements IFoyerService {
 
     @Override
     public void delete(FoyerModel FoyerModel) {
-FoyerModelRepository.delete(FoyerModel);
+        FoyerModelRepository.delete(FoyerModel);
     }
 
     @Override

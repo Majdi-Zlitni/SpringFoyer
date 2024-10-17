@@ -1,10 +1,7 @@
 package tn.esprit.springfoyer.Entities;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -23,6 +20,7 @@ import lombok.experimental.FieldDefaults;
 @Table(name = "Foyer")
 public class FoyerModel {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long idFoyer;
     String nomFoyer;
     String capaciteFoyer;
